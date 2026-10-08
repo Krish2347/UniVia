@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | CampusOS</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            Campus<span>OS</span>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <span>▣</span>
+                Academics
+            </a>
+
+            <p class="nav-label">CAMPUS</p>
+
+            <a href="campus.html" class="nav-item">
+                <span>⌖</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span>⚙</span>
+                Complaints
+            </a>
+
+            <a href="community.html" class="nav-item">
+                <span>♧</span>
+                Community
+            </a>
+
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="#" class="nav-item">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="security-status">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>System Secure</strong>
+                    <small>CampusOS protection active</small>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="dashboard">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-logo">
+                Campus<span>OS</span>
+            </div>
+
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="Search campus...">
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+                    ♢
+                    <span class="notification-dot"></span>
+                </button>
+
+
+                <div class="profile-mini">
+
+                    <div class="profile-avatar" id="profile-avatar">
+                        S
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="profile-name">
+                            Student
+                        </strong>
+
+                        <small id="profile-role">
+                            Student
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- PAGE CONTENT -->
+
+        <section class="dashboard-content">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <p class="welcome-label">
+                        CAMPUS DASHBOARD
+                    </p>
+
+                    <h1>
+                        Welcome, <span id="student-name">
+                            Student
+                        </span> 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening around your campus today.
+                    </p>
+
+                </div>
+
+
+                <div class="date-card">
+
+                    <span>Today</span>
+
+                    <strong id="current-date">
+                        --/--/----
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK STATS -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card" onclick="window.location.href='attendance.html'">
+
+                    <div class="stat-icon attendance">
+                        %
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>Attendance</span>
+
+                        <strong id="attendance-value">
+                            --%
+                        </strong>
+
+                        <small id="attendance-status">
+                            Loading...
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card" onclick="window.location.href='performance.html'">
+
+                    <div class="stat-icon performance">
+                        ★
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>Performance</span>
+
+                        <strong id="performance-value">
+                            --
+                        </strong>
+
+                        <small>
+                            Overall performance
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon tasks">
+                        ✓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>Pending Tasks</span>
+
+                        <strong id="tasks-value">
+                            --
+                        </strong>
+
+                        <small>
+                            Assignments & activities
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon notices">
+                        !
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>New Notices</span>
+
+                        <strong id="notices-value">
+                            --
+                        </strong>
+
+                        <small>
+                            Since your last visit
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- MAIN GRID -->
+
+            <section class="dashboard-grid">
+
+
+                <!-- TIMETABLE -->
+
+                <div class="dashboard-card timetable-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                ACADEMICS
+                            </span>
+
+                            <h2>Today's Schedule</h2>
+
+                        </div>
+
+                        <a href="academics.html">
+                            View full timetable →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="schedule-list"
+                        id="schedule-list">
+
+                        <!-- JS inserts timetable here -->
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ANNOUNCEMENTS -->
+
+                <div class="dashboard-card announcements-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                CAMPUS
+                            </span>
+
+                            <h2>Announcements</h2>
+
+                        </div>
+
+                        <a href="#">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="announcement-list"
+                        id="announcement-list">
+
+                        <!-- JS inserts announcements -->
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <section class="dashboard-card quick-actions-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            CAMPUS SERVICES
+                        </span>
+
+                        <h2>Quick Actions</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <a href="complaints.html" class="quick-action">
+
+                        <div>⚙</div>
+
+                        <span>
+                            Report an Issue
+                        </span>
+
+                        <small>
+                            Wi-Fi, classroom, electricity...
+                        </small>
+
+                    </a>
+
+
+                    <a href="campus.html" class="quick-action">
+
+                        <div>⌖</div>
+
+                        <span>
+                            Find a Resource
+                        </span>
+
+                        <small>
+                            Labs, rooms, library...
+                        </small>
+
+                    </a>
+
+
+                    <a href="community.html" class="quick-action">
+
+                        <div>♧</div>
+
+                        <span>
+                            Community
+                        </span>
+
+                        <small>
+                            Study groups & discussions
+                        </small>
+
+                    </a>
+
+
+                    <a href="analytics.html" class="quick-action">
+
+                        <div>◫</div>
+
+                        <span>
+                            View Analytics
+                        </span>
+
+                        <small>
+                            Performance & insights
+                        </small>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- RECENT ACTIVITY -->
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            ACTIVITY
+                        </span>
+
+                        <h2>Recent Activity</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="activity-list"
+                    id="activity-list">
+
+                    <!-- JS inserts activity -->
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

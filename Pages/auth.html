@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | CampusOS</title>
+
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+    <!-- Back to Home -->
+    <a href="../index.html" class="back-home">
+        ← UniVia
+    </a>
+
+
+    <main class="auth-page">
+
+        <!-- Left Side -->
+        <section class="auth-intro">
+
+            <span class="intro-tag">
+                SMART CAMPUS PLATFORM
+            </span>
+
+            <h1>
+                Your campus,<br>
+                <span>one login away.</span>
+            </h1>
+
+            <p>
+                Access academics, campus services, resources,
+                analytics and your student community from one place.
+            </p>
+
+            <div class="intro-features">
+
+                <div>
+                    <span>✓</span>
+                    Secure access
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Personalized experience
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Connected campus services
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Auth Card -->
+        <section class="auth-container">
+
+            <div class="auth-card">
+
+                <div class="auth-header">
+
+                    <h2 id="form-title">
+                        Welcome back
+                    </h2>
+
+                    <p id="form-subtitle">
+                        Login to access your campus account
+                    </p>
+
+                </div>
+
+
+                <!-- Tabs -->
+
+                <div class="auth-tabs">
+
+                    <button
+                        class="tab active"
+                        id="login-tab"
+                        type="button">
+                        Login
+                    </button>
+
+                    <button
+                        class="tab"
+                        id="register-tab"
+                        type="button">
+                        Register
+                    </button>
+
+                </div>
+
+
+                <!-- ================= LOGIN FORM ================= -->
+
+                <form id="login-form" class="auth-form">
+
+                    <div class="input-group">
+
+                        <label for="login-email">
+                            Email or Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="login-email"
+                            placeholder="Enter your email or student ID"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <div class="label-row">
+
+                            <label for="login-password">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-password">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="login-password"
+                                placeholder="Enter your password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="show-password"
+                                data-target="login-password">
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-btn">
+                        Login →
+                    </button>
+
+                </form>
+
+
+                <!-- ================= REGISTER FORM ================= -->
+
+                <form id="register-form"
+                      class="auth-form hidden">
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+
+                            <label for="first-name">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                placeholder="First name"
+                                required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="last-name">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                placeholder="Last name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="student-id">
+                            Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="student-id"
+                            placeholder="Enter your student ID"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="register-email">
+                            College Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="register-email"
+                            placeholder="example@college.edu"
+                            required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="register-role">
+                            Account Type
+                        </label>
+
+                        <select id="register-role" required>
+
+                            <option value="" disabled selected>
+                                Select account type
+                            </option>
+
+                            <option value="student">
+                                Student
+                            </option>
+
+                            <option value="faculty">
+                                Faculty
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+
+                            <label for="register-password">
+                                Password
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="register-password"
+                                    placeholder="Create password"
+                                    required>
+
+                                <button
+                                    type="button"
+                                    class="show-password"
+                                    data-target="register-password">
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="confirm-password">
+                                Confirm Password
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="confirm-password"
+                                    placeholder="Confirm password"
+                                    required>
+
+                                <button
+                                    type="button"
+                                    class="show-password"
+                                    data-target="confirm-password">
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-btn" id="register-btn">
+                        Create Account →
+                    </button>
+
+                </form>
+
+
+                <!-- Security indicator -->
+
+                <div class="security-note">
+                    🔐 Your campus account is protected
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="JS/auth.js"></script>
+
+</body>
+</html>

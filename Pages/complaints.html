@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complaints | CampusOS</title>
+
+    <link rel="stylesheet" href="../css/complaints.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-mark">C</span>
+            <span>CampusOS</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <span>▤</span>
+                Academics
+            </a>
+
+            <!-- <a href="analytics.html" class="nav-item">
+                <span>◫</span>
+                Analytics
+            </a> -->
+
+            <a href="campus.html" class="nav-item">
+                <span>⌂</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item active">
+                <span>⚑</span>
+                Complaints
+            </a>
+
+            <a href="community.html" class="nav-item">
+                <span>◎</span>
+                Community
+            </a>
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="#" class="nav-item">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="secure-icon">🔒</div>
+            <div>
+                <strong>Secure Campus</strong>
+                <p>Your data is protected</p>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="page-heading">
+                <span class="breadcrumb">CAMPUS / SERVICES</span>
+                <h1>Complaints & Maintenance</h1>
+            </div>
+
+            <div class="user-mini">
+
+                <div class="user-avatar">
+                    S
+                </div>
+
+                <div class="user-info">
+                    <strong>Student</strong>
+                    <span>Student Account</span>
+                </div>
+
+                <span class="dropdown-arrow">⌄</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page -->
+        <section class="complaints-page">
+
+            <!-- Intro -->
+            <div class="page-intro">
+
+                <div>
+                    <span class="section-tag">CAMPUS SERVICES</span>
+
+                    <h2>Report an issue.<br>
+                        <span>We'll take care of it.</span>
+                    </h2>
+
+                    <p>
+                        Report problems around campus and track their
+                        resolution from one place.
+                    </p>
+                </div>
+
+                <button class="raise-btn">
+                    + Raise a Complaint
+                </button>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">▣</div>
+
+                    <div>
+                        <span>Total Complaints</span>
+                        <strong>08</strong>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">◷</div>
+
+                    <div>
+                        <span>In Progress</span>
+                        <strong>02</strong>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+
+                    <div>
+                        <span>Resolved</span>
+                        <strong>05</strong>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">!</div>
+
+                    <div>
+                        <span>Pending</span>
+                        <strong>01</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Raise Complaint -->
+            <div class="complaint-section">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-tag">NEW REQUEST</span>
+                        <h3>Report a Campus Issue</h3>
+                        <p>
+                            Provide the details below so the concerned
+                            department can resolve the issue.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="complaint-form">
+
+                    <div class="form-group">
+                        <label>Complaint Category</label>
+
+                        <select>
+                            <option selected disabled>
+                                Select a category
+                            </option>
+
+                            <option>Wi-Fi / Internet</option>
+                            <option>Electrical</option>
+                            <option>Classroom</option>
+                            <option>Laboratory</option>
+                            <option>Sanitation</option>
+                            <option>Infrastructure</option>
+                            <option>Hostel</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Location</label>
+
+                        <input
+                            type="text"
+                            placeholder="e.g. Block A, Room 204"
+                        >
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label>Complaint Title</label>
+
+                        <input
+                            type="text"
+                            placeholder="Briefly describe the issue"
+                        >
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label>Description</label>
+
+                        <textarea
+                            rows="5"
+                            placeholder="Describe the problem in detail..."
+                        ></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Priority</label>
+
+                        <select>
+                            <option selected>Normal</option>
+                            <option>Low</option>
+                            <option>High</option>
+                            <option>Urgent</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Attach Image <span>(Optional)</span></label>
+
+                        <div class="upload-box">
+                            <span>↑</span>
+                            <div>
+                                <strong>Upload an image</strong>
+                                <p>PNG, JPG up to 5MB</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button class="cancel-btn">
+                            Cancel
+                        </button>
+
+                        <button class="submit-btn">
+                            Submit Complaint →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Complaints -->
+            <div class="complaint-section">
+
+                <div class="section-header row-header">
+
+                    <div>
+                        <span class="section-tag">TRACKING</span>
+                        <h3>My Complaints</h3>
+                        <p>
+                            Track the status of issues you've reported.
+                        </p>
+                    </div>
+
+                    <div class="filter-area">
+
+                        <select>
+                            <option>All Complaints</option>
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Resolved</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Complaint cards -->
+                <div class="complaints-list">
+
+
+                    <!-- Complaint 1 -->
+                    <div class="complaint-card">
+
+                        <div class="complaint-main">
+
+                            <div class="complaint-icon wifi">
+                                Wi
+                            </div>
+
+                            <div class="complaint-info">
+
+                                <div class="complaint-title-row">
+                                    <h4>Wi-Fi connectivity issue</h4>
+                                    <span class="status progress">
+                                        In Progress
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Internet connection frequently drops
+                                    in the hostel study area.
+                                </p>
+
+                                <div class="complaint-meta">
+                                    <span>🎫 CMP-1024</span>
+                                    <span>📍 Hostel Block A</span>
+                                    <span>📅 07 Oct 2026</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="priority high">
+                            High Priority
+                        </div>
+
+                    </div>
+
+
+                    <!-- Complaint 2 -->
+                    <div class="complaint-card">
+
+                        <div class="complaint-main">
+
+                            <div class="complaint-icon electrical">
+                                ⚡
+                            </div>
+
+                            <div class="complaint-info">
+
+                                <div class="complaint-title-row">
+                                    <h4>Classroom tube light not working</h4>
+
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </div>
+
+                                <p>
+                                    One of the lights in the classroom
+                                    has stopped working.
+                                </p>
+
+                                <div class="complaint-meta">
+                                    <span>🎫 CMP-1023</span>
+                                    <span>📍 Room 318</span>
+                                    <span>📅 06 Oct 2026</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="priority normal">
+                            Normal
+                        </div>
+
+                    </div>
+
+
+                    <!-- Complaint 3 -->
+                    <div class="complaint-card">
+
+                        <div class="complaint-main">
+
+                            <div class="complaint-icon classroom">
+                                Cl
+                            </div>
+
+                            <div class="complaint-info">
+
+                                <div class="complaint-title-row">
+                                    <h4>Classroom fan making noise</h4>
+
+                                    <span class="status resolved">
+                                        Resolved
+                                    </span>
+                                </div>
+
+                                <p>
+                                    Ceiling fan was producing unusual
+                                    noise during lectures.
+                                </p>
+
+                                <div class="complaint-meta">
+                                    <span>🎫 CMP-1018</span>
+                                    <span>📍 Block B, Room 204</span>
+                                    <span>📅 02 Oct 2026</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="priority low">
+                            Low Priority
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Help Banner -->
+            <div class="help-banner">
+
+                <div class="help-icon">?</div>
+
+                <div>
+                    <h3>Need urgent assistance?</h3>
+                    <p>
+                        For emergencies or issues affecting safety,
+                        contact the campus administration directly.
+                    </p>
+                </div>
+
+                <button>
+                    Campus Help Desk →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

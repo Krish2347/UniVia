@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance | CampusOS</title>
+
+    <link rel="stylesheet" href="../css/attendence.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            Campus<span>OS</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="academics.html" class="nav-item active">
+                <span>▣</span>
+                Academics
+            </a>
+
+            <p class="nav-label">CAMPUS</p>
+
+            <a href="campus.html" class="nav-item">
+                <span>⌖</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span>⚙</span>
+                Complaints
+            </a>
+
+            <a href="community.html" class="nav-item">
+                <span>♧</span>
+                Community
+            </a>
+
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="#" class="nav-item">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="security-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>System Secure</strong>
+                    <small>CampusOS protection active</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="page-title">
+                <span>ACADEMICS</span>
+                <h1>Attendance</h1>
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div class="profile-avatar" id="profile-avatar">
+                    S
+                </div>
+
+                <div>
+                    <strong id="profile-name">Student</strong>
+                    <small>Student</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+
+            <!-- PAGE INTRO -->
+
+            <div class="intro">
+
+                <div>
+                    <p class="section-label">
+                        ACADEMIC RECORD
+                    </p>
+
+                    <h2>
+                        Track your attendance
+                    </h2>
+
+                    <p>
+                        View attendance records for each subject
+                        and monitor your academic standing.
+                    </p>
+                </div>
+
+
+                <!-- SUBJECT DROPDOWN -->
+
+                <div class="subject-selector">
+
+                    <label for="subject-select">
+                        Select Subject
+                    </label>
+
+                    <select id="subject-select">
+
+                        <option value="" disabled selected>
+                            Select a subject
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EMPTY STATE -->
+
+            <div
+                class="empty-state"
+                id="empty-state">
+
+                <div class="empty-icon">
+                    %
+                </div>
+
+                <h3>
+                    Select a subject
+                </h3>
+
+                <p>
+                    Choose a subject from the dropdown
+                    to view its attendance details.
+                </p>
+
+            </div>
+
+
+
+            <!-- ATTENDANCE CONTENT -->
+
+            <div
+                id="attendance-content"
+                class="attendance-content"
+                style="display: none;">
+
+
+                <!-- SUMMARY -->
+
+                <section class="summary-grid">
+
+
+                    <div class="attendance-card main-percentage">
+
+                        <div class="card-label">
+                            ATTENDANCE
+                        </div>
+
+                        <div class="percentage-row">
+
+                            <strong id="attendance-percentage">
+                                --%
+                            </strong>
+
+                            <span id="attendance-status">
+                                --
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div
+                                id="attendance-progress"
+                                class="progress-fill">
+                            </div>
+
+                        </div>
+
+                        <p id="attendance-message">
+                            --
+                        </p>
+
+                    </div>
+
+
+                    <div class="attendance-card">
+
+                        <div class="card-label">
+                            CLASSES ATTENDED
+                        </div>
+
+                        <strong
+                            class="big-number"
+                            id="classes-present">
+                            --
+                        </strong>
+
+                        <p>
+                            Classes attended
+                        </p>
+
+                    </div>
+
+
+                    <div class="attendance-card">
+
+                        <div class="card-label">
+                            TOTAL CLASSES
+                        </div>
+
+                        <strong
+                            class="big-number"
+                            id="classes-total">
+                            --
+                        </strong>
+
+                        <p>
+                            Classes conducted
+                        </p>
+
+                    </div>
+
+
+                    <div class="attendance-card">
+
+                        <div class="card-label">
+                            ABSENCES
+                        </div>
+
+                        <strong
+                            class="big-number"
+                            id="classes-absent">
+                            --
+                        </strong>
+
+                        <p>
+                            Classes missed
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- DETAILS -->
+
+                <section class="attendance-grid">
+
+
+                    <!-- SUBJECT INFORMATION -->
+
+                    <div class="attendance-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    SUBJECT
+                                </span>
+
+                                <h3 id="subject-name">
+                                    --
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="subject-details">
+
+                            <div>
+                                <span>Faculty</span>
+                                <strong id="faculty-name">
+                                    --
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Subject Code</span>
+                                <strong id="subject-code">
+                                    --
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Credits</span>
+                                <strong id="subject-credits">
+                                    --
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ATTENDANCE ADVICE -->
+
+                    <div class="attendance-card advice-card">
+
+                        <div class="card-label">
+                            ATTENDANCE INSIGHT
+                        </div>
+
+                        <h3 id="advice-title">
+                            --
+                        </h3>
+
+                        <p id="advice-text">
+                            --
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ATTENDANCE HISTORY -->
+
+                <section class="attendance-card history-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                RECORD
+                            </span>
+
+                            <h3>
+                                Attendance History
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="attendance-history">
+
+                                <!-- JS inserts records -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/attendance.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academics | CampusOS</title>
+
+    <link rel="stylesheet" href="../css/academics.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            Campus<span>OS</span>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="academics.html" class="nav-item active">
+                <span>▣</span>
+                Academics
+            </a>
+
+            <p class="nav-label">CAMPUS</p>
+
+            <a href="campus.html" class="nav-item">
+                <span>⌖</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span>⚙</span>
+                Complaints
+            </a>
+
+            <a href="community.html" class="nav-item">
+                <span>♧</span>
+                Community
+            </a>
+
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="#" class="nav-item">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="security-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>System Secure</strong>
+                    <small>CampusOS protection active</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="page-title">
+
+                <span>ACADEMICS</span>
+
+                <h1>
+                    Academic Hub
+                </h1>
+
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div
+                    class="profile-avatar"
+                    id="profile-avatar">
+                    S
+                </div>
+
+                <div>
+
+                    <strong id="profile-name">
+                        Student
+                    </strong>
+
+                    <small>
+                        Student
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+
+            <!-- INTRO -->
+
+            <div class="intro">
+
+                <div>
+
+                    <p class="section-label">
+                        ACADEMIC CENTER
+                    </p>
+
+                    <h2>
+                        Everything about your academics.
+                    </h2>
+
+                    <p>
+                        Track your classes, attendance, assignments,
+                        notes, tests and academic performance in one place.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACADEMIC OVERVIEW -->
+
+            <section class="overview-grid">
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon attendance-icon">
+                        %
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Overall Attendance
+                        </span>
+
+                        <strong id="attendance-value">
+                            --%
+                        </strong>
+
+                        <small id="attendance-status">
+                            Loading...
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon marks-icon">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Average Performance
+                        </span>
+
+                        <strong id="marks-value">
+                            --
+                        </strong>
+
+                        <small>
+                            Across recorded tests
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon assignment-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Pending Assignments
+                        </span>
+
+                        <strong id="assignment-count">
+                            --
+                        </strong>
+
+                        <small>
+                            Need your attention
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="overview-card">
+
+                    <div class="overview-icon notes-icon">
+                        +
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Study Materials
+                        </span>
+
+                        <strong id="notes-count">
+                            --
+                        </strong>
+
+                        <small>
+                            Notes & resources
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ACADEMIC MODULES -->
+
+            <section class="module-grid">
+
+
+                <!-- ATTENDANCE -->
+
+                <a
+                    href="attendance.html"
+                    class="module-card">
+
+                    <div class="module-icon">
+                        %
+                    </div>
+
+                    <div class="module-content">
+
+                        <span class="module-label">
+                            ATTENDANCE
+                        </span>
+
+                        <h3>
+                            Attendance
+                        </h3>
+
+                        <p>
+                            View subject-wise attendance,
+                            class history and attendance status.
+                        </p>
+
+                    </div>
+
+                    <span class="module-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- ASSIGNMENTS -->
+
+                <a
+                    href="#assignments"
+                    class="module-card">
+
+                    <div class="module-icon">
+                        ✓
+                    </div>
+
+                    <div class="module-content">
+
+                        <span class="module-label">
+                            COURSEWORK
+                        </span>
+
+                        <h3>
+                            Assignments
+                        </h3>
+
+                        <p>
+                            Track pending, submitted and
+                            upcoming assignments.
+                        </p>
+
+                    </div>
+
+                    <span class="module-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- NOTES -->
+
+                <a
+                    href="#notes"
+                    class="module-card">
+
+                    <div class="module-icon">
+                        ▤
+                    </div>
+
+                    <div class="module-content">
+
+                        <span class="module-label">
+                            STUDY MATERIAL
+                        </span>
+
+                        <h3>
+                            Notes & Resources
+                        </h3>
+
+                        <p>
+                            Access subject notes, PDFs,
+                            presentations and learning material.
+                        </p>
+
+                    </div>
+
+                    <span class="module-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- TEST MARKS -->
+
+                <a
+                    href="#marks"
+                    class="module-card">
+
+                    <div class="module-icon">
+                        ★
+                    </div>
+
+                    <div class="module-content">
+
+                        <span class="module-label">
+                            PERFORMANCE
+                        </span>
+
+                        <h3>
+                            Test & Exam Marks
+                        </h3>
+
+                        <p>
+                            View test scores, exam marks
+                            and subject-wise performance.
+                        </p>
+
+                    </div>
+
+                    <span class="module-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- LABS -->
+
+                <a
+                    href="#labs"
+                    class="module-card">
+
+                    <div class="module-icon">
+                        ◈
+                    </div>
+
+                    <div class="module-content">
+
+                        <span class="module-label">
+                            PRACTICALS
+                        </span>
+
+                        <h3>
+                            Labs & Practicals
+                        </h3>
+
+                        <p>
+                            View lab schedules, records,
+                            experiments and submissions.
+                        </p>
+
+                    </div>
+
+                    <span class="module-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <!-- TIMETABLE -->
+
+                <a
+                    href="#timetable"
+                    class="module-card">
+
+                    <div class="module-icon">
+                        ▦
+                    </div>
+
+                    <div class="module-content">
+
+                        <span class="module-label">
+                            SCHEDULE
+                        </span>
+
+                        <h3>
+                            Timetable
+                        </h3>
+
+                        <p>
+                            Check your daily and weekly
+                            class schedule.
+                        </p>
+
+                    </div>
+
+                    <span class="module-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </section>
+
+
+
+            <!-- TWO COLUMN SECTION -->
+
+            <section class="academic-grid">
+
+
+                <!-- ASSIGNMENTS -->
+
+                <div
+                    class="academic-card"
+                    id="assignments">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                COURSEWORK
+                            </span>
+
+                            <h3>
+                                Upcoming Assignments
+                            </h3>
+
+                        </div>
+
+                        <a href="#">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="assignment-list"
+                        id="assignment-list">
+
+                        <!-- JS inserts assignments -->
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TEST MARKS -->
+
+                <div
+                    class="academic-card"
+                    id="marks">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Recent Test Marks
+                            </h3>
+
+                        </div>
+
+                        <a href="#">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="marks-list"
+                        id="marks-list">
+
+                        <!-- JS inserts marks -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- NOTES -->
+
+            <section
+                class="academic-card"
+                id="notes">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            STUDY MATERIAL
+                        </span>
+
+                        <h3>
+                            Recent Notes & Resources
+                        </h3>
+
+                    </div>
+
+                    <a href="#">
+                        View library →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="notes-grid"
+                    id="notes-list">
+
+                    <!-- JS inserts notes -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- LABS / TIMETABLE -->
+
+            <section class="academic-grid">
+
+
+                <div
+                    class="academic-card"
+                    id="labs">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                PRACTICALS
+                            </span>
+
+                            <h3>
+                                Lab Work
+                            </h3>
+
+                        </div>
+
+                        <a href="#">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="lab-list"
+                        id="lab-list">
+
+                        <!-- JS -->
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    class="academic-card"
+                    id="timetable">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                SCHEDULE
+                            </span>
+
+                            <h3>
+                                Today's Classes
+                            </h3>
+
+                        </div>
+
+                        <a href="#">
+                            Full timetable →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="class-list"
+                        id="class-list">
+
+                        <!-- JS -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/academics.js"></script>
+
+</body>
+
+</html>

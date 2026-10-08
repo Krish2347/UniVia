@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Performance | CampusOS</title>
+
+    <link rel="stylesheet" href="../css/performance.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-mark">C</span>
+            <span>CampusOS</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="academics.html" class="nav-item active">
+                <span>▤</span>
+                Academics
+            </a>
+
+            <a href="analytics.html" class="nav-item">
+                <span>◫</span>
+                Analytics
+            </a>
+
+            <a href="campus.html" class="nav-item">
+                <span>⌂</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span>⚑</span>
+                Complaints
+            </a>
+
+            <a href="community.html" class="nav-item">
+                <span>◎</span>
+                Community
+            </a>
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="#" class="nav-item">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="secure-icon">🔒</div>
+
+            <div>
+                <strong>Secure Campus</strong>
+                <p>Your data is protected</p>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="page-heading">
+                <span class="breadcrumb">ACADEMICS / PERFORMANCE</span>
+                <h1>Test Marks & Performance</h1>
+            </div>
+
+            <div class="user-mini">
+
+                <div class="user-avatar">
+                    S
+                </div>
+
+                <div class="user-info">
+                    <strong>Student</strong>
+                    <span>Student Account</span>
+                </div>
+
+                <span class="dropdown-arrow">⌄</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page -->
+        <section class="performance-page">
+
+            <!-- Intro -->
+            <div class="page-intro">
+
+                <div>
+                    <span class="section-tag">ACADEMIC PERFORMANCE</span>
+
+                    <h2>
+                        Track your
+                        <span>performance.</span>
+                    </h2>
+
+                    <p>
+                        View your test marks, subject-wise performance,
+                        averages and academic progress.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Subject Selection -->
+            <div class="subject-selector">
+
+                <div class="selector-info">
+
+                    <span class="selector-icon">▤</span>
+
+                    <div>
+                        <span class="selector-label">
+                            SELECT SUBJECT
+                        </span>
+
+                        <h3>View Subject Performance</h3>
+
+                        <p>
+                            Choose a subject to view its test marks
+                            and performance details.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="select-wrapper">
+
+                    <select id="subject-select">
+
+                        <option selected disabled>
+                            Select a subject
+                        </option>
+
+                        <option>Mathematics</option>
+                        <option>Engineering Physics</option>
+                        <option>Programming in C</option>
+                        <option>Electrical Engineering</option>
+                        <option>Engineering Graphics</option>
+                        <option>Indian Knowledge System</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Selected Subject -->
+            <div class="subject-header">
+
+                <div>
+                    <span class="section-tag">SUBJECT</span>
+
+                    <h3>Mathematics</h3>
+
+                    <p>
+                        Subject Code: MATH101 &nbsp; • &nbsp;
+                        Credits: 4
+                    </p>
+                </div>
+
+                <div class="overall-score">
+
+                    <span>SUBJECT AVERAGE</span>
+
+                    <strong>84%</strong>
+
+                    <small>Good Performance</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Performance Overview -->
+            <div class="overview-grid">
+
+                <div class="performance-card">
+
+                    <div class="card-icon blue">
+                        %
+                    </div>
+
+                    <div>
+                        <span>Average Score</span>
+                        <strong>84%</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="performance-card">
+
+                    <div class="card-icon green">
+                        ↑
+                    </div>
+
+                    <div>
+                        <span>Highest Score</span>
+                        <strong>19 / 20</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="performance-card">
+
+                    <div class="card-icon orange">
+                        ↓
+                    </div>
+
+                    <div>
+                        <span>Lowest Score</span>
+                        <strong>15 / 20</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="performance-card">
+
+                    <div class="card-icon purple">
+                        #
+                    </div>
+
+                    <div>
+                        <span>Tests Attempted</span>
+                        <strong>4</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Test Marks -->
+            <div class="content-grid">
+
+                <div class="panel marks-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="section-tag">
+                                TEST RESULTS
+                            </span>
+
+                            <h3>Test Marks</h3>
+                        </div>
+
+                        <span class="test-count">
+                            4 Tests
+                        </span>
+
+                    </div>
+
+
+                    <div class="marks-table">
+
+                        <div class="table-row table-heading">
+
+                            <span>TEST</span>
+                            <span>DATE</span>
+                            <span>MARKS</span>
+                            <span>PERFORMANCE</span>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                <strong>Test 1</strong>
+                                <small>Unit Test</small>
+                            </span>
+
+                            <span>18 Sep 2026</span>
+
+                            <span class="marks">
+                                18 / 20
+                            </span>
+
+                            <span>
+                                <b class="performance-good">
+                                    90%
+                                </b>
+                            </span>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                <strong>Test 2</strong>
+                                <small>Unit Test</small>
+                            </span>
+
+                            <span>27 Sep 2026</span>
+
+                            <span class="marks">
+                                16 / 20
+                            </span>
+
+                            <span>
+                                <b class="performance-average">
+                                    80%
+                                </b>
+                            </span>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                <strong>Mid Semester</strong>
+                                <small>Mid Term Examination</small>
+                            </span>
+
+                            <span>04 Oct 2026</span>
+
+                            <span class="marks">
+                                19 / 20
+                            </span>
+
+                            <span>
+                                <b class="performance-good">
+                                    95%
+                                </b>
+                            </span>
+
+                        </div>
+
+
+                        <div class="table-row">
+
+                            <span>
+                                <strong>Test 3</strong>
+                                <small>Unit Test</small>
+                            </span>
+
+                            <span>—</span>
+
+                            <span class="marks pending-mark">
+                                Upcoming
+                            </span>
+
+                            <span>
+                                <b class="performance-pending">
+                                    —
+                                </b>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Performance Summary -->
+                <div class="panel summary-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="section-tag">
+                                ANALYSIS
+                            </span>
+
+                            <h3>Performance Summary</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-label">
+                            <span>Test Performance</span>
+                            <strong>84%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:84%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-label">
+                            <span>Consistency</span>
+                            <strong>78%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:78%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-label">
+                            <span>Class Average</span>
+                            <strong>76%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill muted-fill" style="width:76%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-insight">
+
+                        <span>✦</span>
+
+                        <div>
+                            <strong>Good progress</strong>
+
+                            <p>
+                                Your performance is above the class
+                                average. Keep maintaining consistency
+                                across upcoming tests.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Subject Progress -->
+            <div class="panel progress-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <span class="section-tag">
+                            PERFORMANCE TREND
+                        </span>
+
+                        <h3>Test-wise Progress</h3>
+
+                        <p>
+                            Your marks across the tests conducted
+                            for this subject.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="trend-area">
+
+                    <div class="trend-line">
+
+                        <div class="trend-point">
+                            <span>95%</span>
+                            <i></i>
+                            <small>Mid Sem</small>
+                        </div>
+
+                        <div class="trend-point">
+                            <span>90%</span>
+                            <i></i>
+                            <small>Test 1</small>
+                        </div>
+
+                        <div class="trend-point">
+                            <span>80%</span>
+                            <i></i>
+                            <small>Test 2</small>
+                        </div>
+
+                        <div class="trend-point upcoming">
+                            <span>—</span>
+                            <i></i>
+                            <small>Test 3</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Info -->
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <div class="info-icon">✓</div>
+
+                    <div>
+                        <h3>Strong Areas</h3>
+
+                        <p>
+                            Your recent test scores show good
+                            understanding of the subject.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon warning">!</div>
+
+                    <div>
+                        <h3>Room for Improvement</h3>
+
+                        <p>
+                            Focus on topics where your test scores
+                            were comparatively lower.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

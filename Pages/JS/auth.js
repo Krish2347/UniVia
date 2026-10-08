@@ -17,3 +17,16 @@ tabs.forEach(tab => {
             tab.classList.add("active");
     });
 });
+
+
+function login() { 
+    let login_email = document.getElementById("login-email").value;
+    let login_password = document.getElementById("login-password").value;
+    if (login_email == "student@gmail.com" && login_password == "test") {
+        console.log(login_email)
+        console.log(login_password)
+        window.location.href = "student-dashboard.html";
+    } else if(login_email == "faculty@gmail.com" && login_password == "test") {
+        window.location.href = "faculty-dashboard.html";
+    }
+}

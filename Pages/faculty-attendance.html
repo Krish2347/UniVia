@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance | UniVia</title>
+
+    <link rel="stylesheet" href="../css/faculty-attendance.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-mark">U</span>
+            <span>Uni<span>Via</span></span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN</p>
+
+            <a href="faculty-dashboard.html" class="nav-item">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="classes.html" class="nav-item">
+                <span>▦</span>
+                My Classes
+            </a>
+
+            <a href="faculty-attendance.html" class="nav-item active">
+                <span>✓</span>
+                Attendance
+            </a>
+
+            <a href="faculty-performance.html" class="nav-item">
+                <span>◔</span>
+                Performance
+            </a>
+
+            <a href="assignments.html" class="nav-item">
+                <span>□</span>
+                Assignments
+            </a>
+
+            <a href="announcements.html" class="nav-item">
+                <span>◉</span>
+                Announcements
+            </a>
+
+            <p class="nav-title">CAMPUS</p>
+
+            <a href="campus.html" class="nav-item">
+                <span>⌂</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span>!</span>
+                Complaints
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="profile.html" class="nav-item">
+                <span>○</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">FACULTY / ACADEMICS</p>
+                <h1>Attendance</h1>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+                    🔔
+                    <span></span>
+                </button>
+
+                <div class="profile-mini">
+
+                    <div class="avatar">F</div>
+
+                    <div>
+                        <strong>Faculty Name</strong>
+                        <small>Faculty</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- INTRO -->
+            <div class="page-intro">
+
+                <div>
+                    <p class="intro-label">CLASS MANAGEMENT</p>
+
+                    <h2>Attendance</h2>
+
+                    <p>
+                        Mark and review attendance for your classes.
+                    </p>
+                </div>
+
+                <button class="primary-btn">
+                    Save Attendance
+                </button>
+
+            </div>
+
+
+            <!-- CLASS SELECTOR -->
+            <section class="selector-panel">
+
+                <div class="selector-group">
+
+                    <label for="class-select">Class / Section</label>
+
+                    <select id="class-select">
+                        <option>Programming in C — B1</option>
+                        <option>Data Structures — A1</option>
+                        <option>Artificial Intelligence — B2</option>
+                        <option>Operating Systems — A2</option>
+                    </select>
+
+                </div>
+
+
+                <div class="selector-group">
+
+                    <label for="date-select">Date</label>
+
+                    <input
+                        type="date"
+                        id="date-select"
+                        value="2026-10-08"
+                    >
+
+                </div>
+
+
+                <div class="selector-group">
+
+                    <label>Session</label>
+
+                    <select>
+                        <option>09:00 AM – 10:00 AM</option>
+                        <option>11:00 AM – 12:00 PM</option>
+                        <option>02:00 PM – 03:00 PM</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- CLASS INFO -->
+            <div class="class-heading">
+
+                <div>
+
+                    <div class="subject-title">
+
+                        <div class="subject-icon">
+                            C
+                        </div>
+
+                        <div>
+                            <h3>Programming in C</h3>
+                            <p>CSE101 • Section B1</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="class-meta">
+
+                    <div>
+                        <span>Students</span>
+                        <strong>62</strong>
+                    </div>
+
+                    <div>
+                        <span>Current Average</span>
+                        <strong>87%</strong>
+                    </div>
+
+                    <div>
+                        <span>Sessions</span>
+                        <strong>24</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ATTENDANCE SUMMARY -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <span>Present</span>
+                        <strong>53</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+                        ×
+                    </div>
+
+                    <div>
+                        <span>Absent</span>
+                        <strong>6</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ◷
+                    </div>
+
+                    <div>
+                        <span>Late</span>
+                        <strong>3</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        %
+                    </div>
+
+                    <div>
+                        <span>Attendance Rate</span>
+                        <strong>85.5%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ATTENDANCE TABLE -->
+            <section class="attendance-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Student Attendance</h3>
+                        <p>08 October 2026 • Programming in C</p>
+                    </div>
+
+                    <div class="table-actions">
+
+                        <button class="secondary-btn">
+                            Mark All Present
+                        </button>
+
+                        <button class="secondary-btn">
+                            Export
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>#</th>
+                                <th>Student</th>
+                                <th>Student ID</th>
+                                <th>Overall</th>
+                                <th>Today's Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>01</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">AK</div>
+
+                                        <div>
+                                            <strong>Aarav Kumar</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240101</td>
+
+                                <td>
+                                    <span class="attendance-good">94%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status present">
+                                        ✓ Present
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>02</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">AS</div>
+
+                                        <div>
+                                            <strong>Ananya Sharma</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240102</td>
+
+                                <td>
+                                    <span class="attendance-good">91%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status present">
+                                        ✓ Present
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>03</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">RK</div>
+
+                                        <div>
+                                            <strong>Rohan Kumar</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240103</td>
+
+                                <td>
+                                    <span class="attendance-average">78%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status absent">
+                                        × Absent
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>04</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">PS</div>
+
+                                        <div>
+                                            <strong>Priya Singh</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240104</td>
+
+                                <td>
+                                    <span class="attendance-good">88%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status late">
+                                        ◷ Late
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>05</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">VS</div>
+
+                                        <div>
+                                            <strong>Vivek Singh</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240105</td>
+
+                                <td>
+                                    <span class="attendance-low">68%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status present">
+                                        ✓ Present
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>06</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">NM</div>
+
+                                        <div>
+                                            <strong>Neha Mishra</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240106</td>
+
+                                <td>
+                                    <span class="attendance-good">96%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status present">
+                                        ✓ Present
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>07</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">AS</div>
+
+                                        <div>
+                                            <strong>Aditya Singh</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240107</td>
+
+                                <td>
+                                    <span class="attendance-average">81%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status present">
+                                        ✓ Present
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>08</td>
+
+                                <td>
+                                    <div class="student">
+                                        <div class="student-avatar">RG</div>
+
+                                        <div>
+                                            <strong>Rahul Gupta</strong>
+                                            <span>CSE • B1</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>CS240108</td>
+
+                                <td>
+                                    <span class="attendance-low">62%</span>
+                                </td>
+
+                                <td>
+                                    <span class="status absent">
+                                        × Absent
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- TABLE FOOTER -->
+                <div class="table-footer">
+
+                    <span>
+                        Showing <strong>8</strong> of <strong>62</strong> students
+                    </span>
+
+                    <div class="pagination">
+
+                        <button>←</button>
+                        <button class="page-active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>...</button>
+                        <button>8</button>
+                        <button>→</button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- LOW ATTENDANCE -->
+            <section class="alert-panel">
+
+                <div class="alert-icon">
+                    !
+                </div>
+
+                <div class="alert-content">
+
+                    <h3>Students needing attention</h3>
+
+                    <p>
+                        6 students currently have attendance below 75% in this class.
+                    </p>
+
+                </div>
+
+                <a href="faculty-performance.html">
+                    View students →
+                </a>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

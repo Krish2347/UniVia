@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Classes | UniVia</title>
+
+    <link rel="stylesheet" href="../css/classes.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span class="logo-mark">U</span>
+            <span>Uni<span>Via</span></span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN</p>
+
+            <a href="faculty-dashboard.html" class="nav-item">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="classes.html" class="nav-item active">
+                <span>▦</span>
+                My Classes
+            </a>
+
+            <a href="faculty-attendance.html" class="nav-item">
+                <span>✓</span>
+                Attendance
+            </a>
+
+            <a href="faculty-performance.html" class="nav-item">
+                <span>◔</span>
+                Performance
+            </a>
+
+            <a href="assignments.html" class="nav-item">
+                <span>□</span>
+                Assignments
+            </a>
+
+            <a href="announcements.html" class="nav-item">
+                <span>◉</span>
+                Announcements
+            </a>
+
+            <p class="nav-title">CAMPUS</p>
+
+            <a href="campus.html" class="nav-item">
+                <span>⌂</span>
+                Campus
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span>!</span>
+                Complaints
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="profile.html" class="nav-item">
+                <span>○</span>
+                Profile
+            </a>
+
+            <a href="../index.html" class="nav-item logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">FACULTY / ACADEMICS</p>
+                <h1>My Classes</h1>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+                    🔔
+                    <span></span>
+                </button>
+
+                <div class="profile-mini">
+
+                    <div class="avatar">F</div>
+
+                    <div>
+                        <strong>Faculty Name</strong>
+                        <small>Faculty</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- PAGE INTRO -->
+            <div class="page-intro">
+
+                <div>
+                    <p class="intro-label">TEACHING ASSIGNMENTS</p>
+
+                    <h2>My Classes</h2>
+
+                    <p>
+                        Manage your assigned subjects, sections and class information.
+                    </p>
+                </div>
+
+                <button class="primary-btn">
+                    + Add Class
+                </button>
+
+            </div>
+
+
+            <!-- SUMMARY -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">▦</div>
+
+                    <div>
+                        <span>Total Classes</span>
+                        <strong>4</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">◉</div>
+
+                    <div>
+                        <span>Total Students</span>
+                        <strong>186</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">◫</div>
+
+                    <div>
+                        <span>Subjects</span>
+                        <strong>3</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">◷</div>
+
+                    <div>
+                        <span>Classes Today</span>
+                        <strong>3</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTER BAR -->
+            <div class="filter-bar">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="text"
+                        placeholder="Search classes or subjects..."
+                    >
+                </div>
+
+                <select>
+                    <option>All Departments</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Electronics</option>
+                </select>
+
+                <select>
+                    <option>All Semesters</option>
+                    <option>1st Semester</option>
+                    <option>2nd Semester</option>
+                    <option>3rd Semester</option>
+                    <option>4th Semester</option>
+                </select>
+
+            </div>
+
+
+            <!-- CLASS CARDS -->
+            <div class="section-header">
+
+                <div>
+                    <h3>Assigned Classes</h3>
+                    <p>Classes currently assigned to you</p>
+                </div>
+
+                <span class="class-count">4 Classes</span>
+
+            </div>
+
+
+            <div class="classes-grid">
+
+
+                <!-- CLASS 1 -->
+                <div class="class-card">
+
+                    <div class="class-top">
+
+                        <div class="subject-icon blue">
+                            C
+                        </div>
+
+                        <span class="active-badge">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <h3>Programming in C</h3>
+
+                    <p class="subject-code">
+                        CSE101 • Core Subject
+                    </p>
+
+
+                    <div class="class-info">
+
+                        <div>
+                            <span>Section</span>
+                            <strong>B1</strong>
+                        </div>
+
+                        <div>
+                            <span>Students</span>
+                            <strong>62</strong>
+                        </div>
+
+                        <div>
+                            <span>Credits</span>
+                            <strong>4</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <span>◷</span>
+
+                        <div>
+                            <strong>Monday • Wednesday</strong>
+                            <small>09:00 AM – 10:00 AM</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="room">
+                        <span>⌂</span>
+                        Room 204
+                    </div>
+
+
+                    <div class="card-actions">
+
+                        <a href="faculty-attendance.html">
+                            Attendance
+                        </a>
+
+                        <a href="faculty-performance.html">
+                            Performance
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLASS 2 -->
+                <div class="class-card">
+
+                    <div class="class-top">
+
+                        <div class="subject-icon cyan">
+                            DS
+                        </div>
+
+                        <span class="active-badge">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <h3>Data Structures</h3>
+
+                    <p class="subject-code">
+                        CSE201 • Core Subject
+                    </p>
+
+
+                    <div class="class-info">
+
+                        <div>
+                            <span>Section</span>
+                            <strong>A1</strong>
+                        </div>
+
+                        <div>
+                            <span>Students</span>
+                            <strong>58</strong>
+                        </div>
+
+                        <div>
+                            <span>Credits</span>
+                            <strong>4</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <span>◷</span>
+
+                        <div>
+                            <strong>Tuesday • Thursday</strong>
+                            <small>02:00 PM – 03:00 PM</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="room">
+                        <span>⌂</span>
+                        Room 301
+                    </div>
+
+
+                    <div class="card-actions">
+
+                        <a href="faculty-attendance.html">
+                            Attendance
+                        </a>
+
+                        <a href="faculty-performance.html">
+                            Performance
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLASS 3 -->
+                <div class="class-card">
+
+                    <div class="class-top">
+
+                        <div class="subject-icon purple">
+                            AI
+                        </div>
+
+                        <span class="active-badge">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <h3>Artificial Intelligence</h3>
+
+                    <p class="subject-code">
+                        CSE301 • Department Elective
+                    </p>
+
+
+                    <div class="class-info">
+
+                        <div>
+                            <span>Section</span>
+                            <strong>B2</strong>
+                        </div>
+
+                        <div>
+                            <span>Students</span>
+                            <strong>66</strong>
+                        </div>
+
+                        <div>
+                            <span>Credits</span>
+                            <strong>3</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <span>◷</span>
+
+                        <div>
+                            <strong>Monday • Friday</strong>
+                            <small>11:00 AM – 12:00 PM</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="room">
+                        <span>⌂</span>
+                        Lab 3
+                    </div>
+
+
+                    <div class="card-actions">
+
+                        <a href="faculty-attendance.html">
+                            Attendance
+                        </a>
+
+                        <a href="faculty-performance.html">
+                            Performance
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CLASS 4 -->
+                <div class="class-card">
+
+                    <div class="class-top">
+
+                        <div class="subject-icon orange">
+                            OS
+                        </div>
+
+                        <span class="active-badge">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <h3>Operating Systems</h3>
+
+                    <p class="subject-code">
+                        CSE302 • Core Subject
+                    </p>
+
+
+                    <div class="class-info">
+
+                        <div>
+                            <span>Section</span>
+                            <strong>A2</strong>
+                        </div>
+
+                        <div>
+                            <span>Students</span>
+                            <strong>54</strong>
+                        </div>
+
+                        <div>
+                            <span>Credits</span>
+                            <strong>4</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <span>◷</span>
+
+                        <div>
+                            <strong>Wednesday • Friday</strong>
+                            <small>03:00 PM – 04:00 PM</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="room">
+                        <span>⌂</span>
+                        Room 205
+                    </div>
+
+
+                    <div class="card-actions">
+
+                        <a href="faculty-attendance.html">
+                            Attendance
+                        </a>
+
+                        <a href="faculty-performance.html">
+                            Performance
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- UPCOMING CLASSES -->
+            <section class="upcoming-panel">
+
+                <div class="section-header">
+
+                    <div>
+                        <h3>Upcoming Classes</h3>
+                        <p>Your next scheduled sessions</p>
+                    </div>
+
+                    <a href="faculty-dashboard.html">
+                        View dashboard →
+                    </a>
+
+                </div>
+
+
+                <div class="upcoming-list">
+
+                    <div class="upcoming-item">
+
+                        <div class="upcoming-time">
+                            <strong>09:00</strong>
+                            <span>Tomorrow</span>
+                        </div>
+
+                        <div class="upcoming-info">
+                            <strong>Programming in C</strong>
+                            <span>B1 • Room 204</span>
+                        </div>
+
+                        <span class="upcoming-tag blue-tag">
+                            Lecture
+                        </span>
+
+                    </div>
+
+
+                    <div class="upcoming-item">
+
+                        <div class="upcoming-time">
+                            <strong>11:00</strong>
+                            <span>Tomorrow</span>
+                        </div>
+
+                        <div class="upcoming-info">
+                            <strong>Artificial Intelligence</strong>
+                            <span>B2 • Lab 3</span>
+                        </div>
+
+                        <span class="upcoming-tag purple-tag">
+                            Lab
+                        </span>
+
+                    </div>
+
+
+                    <div class="upcoming-item">
+
+                        <div class="upcoming-time">
+                            <strong>02:00</strong>
+                            <span>Thursday</span>
+                        </div>
+
+                        <div class="upcoming-info">
+                            <strong>Data Structures</strong>
+                            <span>A1 • Room 301</span>
+                        </div>
+
+                        <span class="upcoming-tag cyan-tag">
+                            Lecture
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

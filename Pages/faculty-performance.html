@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance | UniVia</title>
+    <link rel="stylesheet" href="../css/faculty-performance.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">U</div>
+            <div>
+                <h2>UniVia</h2>
+                <span>Faculty Portal</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="faculty-dashboard.html">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="classes.html">
+                <span>▤</span>
+                My Classes
+            </a>
+
+            <a href="faculty-attendance.html">
+                <span>✓</span>
+                Attendance
+            </a>
+
+            <a href="faculty-performance.html" class="active">
+                <span>◫</span>
+                Performance
+            </a>
+
+            <a href="assignments.html">
+                <span>☷</span>
+                Assignments
+            </a>
+
+            <a href="announcements.html">
+                <span>◉</span>
+                Announcements
+            </a>
+
+            <p class="nav-label">CAMPUS</p>
+
+            <a href="campus.html">
+                <span>⌂</span>
+                Campus
+            </a>
+
+            <a href="complaints.html">
+                <span>⚠</span>
+                Complaints
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="profile.html">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="auth.html" class="logout">
+                <span>↪</span>
+                Logout
+            </a>
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">FACULTY / ACADEMICS</p>
+                <h1>Performance</h1>
+            </div>
+
+            <div class="topbar-right">
+                <button class="notification">♢</button>
+
+                <div class="faculty-profile">
+                    <div class="avatar">F</div>
+                    <div>
+                        <strong>Faculty Name</strong>
+                        <span>Faculty</span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="page-intro">
+
+            <div>
+                <p class="eyebrow">Academic Analytics</p>
+                <h2>Student Performance</h2>
+                <p>
+                    Monitor class performance, identify learning gaps,
+                    and track student progress.
+                </p>
+            </div>
+
+            <button class="primary-btn">
+                Export Report
+            </button>
+
+        </section>
+
+
+        <!-- Class Selector -->
+
+        <section class="selector-card">
+
+            <div class="selector-group">
+                <label>Class / Section</label>
+
+                <select>
+                    <option>Programming in C — B1</option>
+                    <option>Data Structures — A1</option>
+                    <option>Artificial Intelligence — B2</option>
+                    <option>Operating Systems — A2</option>
+                </select>
+            </div>
+
+            <div class="selector-group">
+                <label>Assessment</label>
+
+                <select>
+                    <option>Overall Performance</option>
+                    <option>Test 1</option>
+                    <option>Test 2</option>
+                    <option>Mid Semester</option>
+                </select>
+            </div>
+
+            <div class="selector-group">
+                <label>Semester</label>
+
+                <select>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                </select>
+            </div>
+
+        </section>
+
+
+        <!-- Class Overview -->
+
+        <section class="overview-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">◎</div>
+                <div>
+                    <span>Class Average</span>
+                    <strong>74.6%</strong>
+                    <small>↑ 4.2% from previous test</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div>
+                    <span>Passing Students</span>
+                    <strong>53</strong>
+                    <small>85.5% of class</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">!</div>
+                <div>
+                    <span>Needs Attention</span>
+                    <strong>9</strong>
+                    <small>Below 50%</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">★</div>
+                <div>
+                    <span>Top Performer</span>
+                    <strong>94.2%</strong>
+                    <small>Student #CSE101-021</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="content-grid">
+
+            <!-- Performance Distribution -->
+
+            <section class="panel distribution-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Performance Distribution</h3>
+                        <p>Students grouped by overall score</p>
+                    </div>
+                </div>
+
+                <div class="distribution">
+
+                    <div class="distribution-row">
+                        <div class="range">
+                            <span>90–100%</span>
+                            <strong>6 students</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div style="width: 10%;"></div>
+                        </div>
+
+                        <span class="percentage">10%</span>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="range">
+                            <span>75–89%</span>
+                            <strong>19 students</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div style="width: 31%;"></div>
+                        </div>
+
+                        <span class="percentage">31%</span>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="range">
+                            <span>60–74%</span>
+                            <strong>21 students</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div style="width: 34%;"></div>
+                        </div>
+
+                        <span class="percentage">34%</span>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="range">
+                            <span>50–59%</span>
+                            <strong>7 students</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div style="width: 11%;"></div>
+                        </div>
+
+                        <span class="percentage">11%</span>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="range">
+                            <span>Below 50%</span>
+                            <strong>9 students</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div style="width: 14%;"></div>
+                        </div>
+
+                        <span class="percentage">14%</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Subject / Topic Analysis -->
+
+            <section class="panel topic-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h3>Topic Performance</h3>
+                        <p>Average score by topic</p>
+                    </div>
+                </div>
+
+                <div class="topic-list">
+
+                    <div class="topic">
+                        <div>
+                            <span>Variables & Data Types</span>
+                            <strong>86%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width: 86%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="topic">
+                        <div>
+                            <span>Control Statements</span>
+                            <strong>79%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width: 79%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="topic">
+                        <div>
+                            <span>Functions</span>
+                            <strong>71%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width: 71%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="topic">
+                        <div>
+                            <span>Arrays & Strings</span>
+                            <strong>63%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width: 63%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="topic">
+                        <div>
+                            <span>Pointers</span>
+                            <strong>52%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width: 52%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Student Performance Table -->
+
+        <section class="panel students-panel">
+
+            <div class="panel-header table-header">
+
+                <div>
+                    <h3>Student Performance</h3>
+                    <p>Individual academic performance</p>
+                </div>
+
+                <div class="table-tools">
+                    <input
+                        type="text"
+                        placeholder="Search student..."
+                    >
+
+                    <select>
+                        <option>All Students</option>
+                        <option>Top Performers</option>
+                        <option>Needs Attention</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Student</th>
+                            <th>Student ID</th>
+                            <th>Attendance</th>
+                            <th>Test 1</th>
+                            <th>Test 2</th>
+                            <th>Overall</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>01</td>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar">AK</div>
+                                    <span>Aditya Kumar</span>
+                                </div>
+                            </td>
+                            <td>CSE101-021</td>
+                            <td>94%</td>
+                            <td>88</td>
+                            <td>92</td>
+                            <td><strong>90%</strong></td>
+                            <td><span class="status excellent">Excellent</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>02</td>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar">RS</div>
+                                    <span>Riya Sharma</span>
+                                </div>
+                            </td>
+                            <td>CSE101-034</td>
+                            <td>91%</td>
+                            <td>84</td>
+                            <td>87</td>
+                            <td><strong>86%</strong></td>
+                            <td><span class="status good">Good</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>03</td>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar">RK</div>
+                                    <span>Rahul Kumar</span>
+                                </div>
+                            </td>
+                            <td>CSE101-017</td>
+                            <td>82%</td>
+                            <td>71</td>
+                            <td>76</td>
+                            <td><strong>74%</strong></td>
+                            <td><span class="status average">Average</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>04</td>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar">PS</div>
+                                    <span>Priya Singh</span>
+                                </div>
+                            </td>
+                            <td>CSE101-042</td>
+                            <td>78%</td>
+                            <td>63</td>
+                            <td>68</td>
+                            <td><strong>65%</strong></td>
+                            <td><span class="status average">Average</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>05</td>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar">AM</div>
+                                    <span>Arjun Mehta</span>
+                                </div>
+                            </td>
+                            <td>CSE101-056</td>
+                            <td>69%</td>
+                            <td>48</td>
+                            <td>51</td>
+                            <td><strong>49%</strong></td>
+                            <td><span class="status attention">Attention</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>06</td>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar">NS</div>
+                                    <span>Neha Singh</span>
+                                </div>
+                            </td>
+                            <td>CSE101-009</td>
+                            <td>73%</td>
+                            <td>42</td>
+                            <td>46</td>
+                            <td><strong>44%</strong></td>
+                            <td><span class="status attention">Attention</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="table-footer">
+                <span>Showing 6 of 62 students</span>
+
+                <div class="pagination">
+                    <button>‹</button>
+                    <button class="current">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>…</button>
+                    <button>11</button>
+                    <button>›</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Insight -->
+
+        <section class="insight-box">
+
+            <div class="insight-icon">✦</div>
+
+            <div>
+                <h3>Performance Insight</h3>
+                <p>
+                    Pointers currently have the lowest class average at 52%.
+                    Consider providing additional practice material or a
+                    revision session before the next assessment.
+                </p>
+            </div>
+
+            <button>View Insights →</button>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

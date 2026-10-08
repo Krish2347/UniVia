@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements | UniVia</title>
+    <link rel="stylesheet" href="../css/announcements.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">U</div>
+            <div>
+                <h2>UniVia</h2>
+                <span>Faculty Portal</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="faculty-dashboard.html">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="classes.html">
+                <span>▤</span>
+                My Classes
+            </a>
+
+            <a href="faculty-attendance.html">
+                <span>✓</span>
+                Attendance
+            </a>
+
+            <a href="faculty-performance.html">
+                <span>◫</span>
+                Performance
+            </a>
+
+            <a href="assignments.html">
+                <span>☷</span>
+                Assignments
+            </a>
+
+            <a href="announcements.html" class="active">
+                <span>◉</span>
+                Announcements
+            </a>
+
+            <p class="nav-label">CAMPUS</p>
+
+            <a href="campus.html">
+                <span>⌂</span>
+                Campus
+            </a>
+
+            <a href="complaints.html">
+                <span>⚠</span>
+                Complaints
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="profile.html">
+                <span>◯</span>
+                Profile
+            </a>
+
+            <a href="auth.html" class="logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">FACULTY / COMMUNICATION</p>
+                <h1>Announcements</h1>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification">♢</button>
+
+                <div class="faculty-profile">
+                    <div class="avatar">F</div>
+
+                    <div>
+                        <strong>Faculty Name</strong>
+                        <span>Faculty</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Intro -->
+
+        <section class="page-intro">
+
+            <div>
+                <p class="eyebrow">Communication</p>
+
+                <h2>Announcements</h2>
+
+                <p>
+                    Share important updates, reminders, and academic
+                    information with your students.
+                </p>
+            </div>
+
+            <button class="primary-btn">
+                + New Announcement
+            </button>
+
+        </section>
+
+
+        <!-- Stats -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">◉</div>
+
+                <div>
+                    <span>Total Posted</span>
+                    <strong>24</strong>
+                    <small>This semester</small>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">✓</div>
+
+                <div>
+                    <span>Active</span>
+                    <strong>4</strong>
+                    <small>Currently visible to students</small>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">◷</div>
+
+                <div>
+                    <span>Scheduled</span>
+                    <strong>2</strong>
+                    <small>Waiting to be published</small>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">↗</div>
+
+                <div>
+                    <span>Avg. Reach</span>
+                    <strong>91%</strong>
+                    <small>Student view rate</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Create Announcement -->
+
+        <section class="compose-card">
+
+            <div class="compose-header">
+
+                <div>
+                    <h3>Create Announcement</h3>
+                    <p>Publish an update to your students</p>
+                </div>
+
+                <span class="draft-label">Draft</span>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group full">
+
+                    <label>Announcement Title</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter announcement title"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Target Class</label>
+
+                    <select>
+                        <option>Select class</option>
+                        <option>Programming in C — B1</option>
+                        <option>Data Structures — A1</option>
+                        <option>Artificial Intelligence — B2</option>
+                        <option>Operating Systems — A2</option>
+                        <option>All My Classes</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Priority</label>
+
+                    <select>
+                        <option>Normal</option>
+                        <option>Important</option>
+                        <option>Urgent</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label>Message</label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Write your announcement..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="compose-footer">
+
+                <label class="attachment">
+                    + Attach File
+                </label>
+
+                <div class="compose-actions">
+
+                    <button class="cancel-btn">
+                        Save Draft
+                    </button>
+
+                    <button class="primary-btn">
+                        Publish Announcement
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Announcements -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h3>Recent Announcements</h3>
+                    <p>Manage your previously published updates</p>
+                </div>
+
+                <div class="filters">
+
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                    >
+
+                    <select>
+                        <option>All Classes</option>
+                        <option>Programming in C</option>
+                        <option>Data Structures</option>
+                        <option>Artificial Intelligence</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="announcement-list">
+
+
+                <!-- Announcement -->
+
+                <article class="announcement-item">
+
+                    <div class="announcement-icon important">
+                        !
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <div class="announcement-title">
+
+                            <h3>Test 2 Syllabus & Important Topics</h3>
+
+                            <span class="priority important">
+                                Important
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Please prepare chapters 4–6 for the upcoming
+                            assessment. The detailed topic list has been
+                            shared with the class.
+                        </p>
+
+                        <div class="announcement-meta">
+                            <span>Programming in C · B1</span>
+                            <span>Posted Oct 8, 2026</span>
+                            <span>56 / 62 viewed</span>
+                        </div>
+
+                    </div>
+
+                    <div class="announcement-status">
+                        <span class="published">Published</span>
+                        <button>⋮</button>
+                    </div>
+
+                </article>
+
+
+                <!-- Announcement -->
+
+                <article class="announcement-item">
+
+                    <div class="announcement-icon normal">
+                        i
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <div class="announcement-title">
+
+                            <h3>Assignment Submission Reminder</h3>
+
+                            <span class="priority normal">
+                                Normal
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Students who have not submitted the linked list
+                            assignment are requested to submit it before
+                            the deadline.
+                        </p>
+
+                        <div class="announcement-meta">
+                            <span>Data Structures · A1</span>
+                            <span>Posted Oct 7, 2026</span>
+                            <span>51 / 58 viewed</span>
+                        </div>
+
+                    </div>
+
+                    <div class="announcement-status">
+                        <span class="published">Published</span>
+                        <button>⋮</button>
+                    </div>
+
+                </article>
+
+
+                <!-- Announcement -->
+
+                <article class="announcement-item">
+
+                    <div class="announcement-icon urgent">
+                        !
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <div class="announcement-title">
+
+                            <h3>Tomorrow's Class Moved to Lab 3</h3>
+
+                            <span class="priority urgent">
+                                Urgent
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Tomorrow's AI class will be conducted in Lab 3
+                            instead of Room 204 due to equipment maintenance.
+                        </p>
+
+                        <div class="announcement-meta">
+                            <span>Artificial Intelligence · B2</span>
+                            <span>Posted Oct 6, 2026</span>
+                            <span>63 / 66 viewed</span>
+                        </div>
+
+                    </div>
+
+                    <div class="announcement-status">
+                        <span class="published">Published</span>
+                        <button>⋮</button>
+                    </div>
+
+                </article>
+
+
+                <!-- Scheduled -->
+
+                <article class="announcement-item">
+
+                    <div class="announcement-icon scheduled">
+                        ◷
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <div class="announcement-title">
+
+                            <h3>Mid-Semester Revision Session</h3>
+
+                            <span class="priority scheduled">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A revision session will be conducted before the
+                            mid-semester examination.
+                        </p>
+
+                        <div class="announcement-meta">
+                            <span>Operating Systems · A2</span>
+                            <span>Scheduled Oct 12, 2026</span>
+                            <span>Not published</span>
+                        </div>
+
+                    </div>
+
+                    <div class="announcement-status">
+                        <span class="scheduled-text">Scheduled</span>
+                        <button>⋮</button>
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="list-footer">
+
+                <span>Showing 4 of 24 announcements</span>
+
+                <div class="pagination">
+                    <button>‹</button>
+                    <button class="current">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>…</button>
+                    <button>6</button>
+                    <button>›</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Communication Insight -->
+
+        <section class="insight-box">
+
+            <div class="insight-icon">
+                ↗
+            </div>
+
+            <div>
+                <h3>Communication Reach</h3>
+
+                <p>
+                    Your announcements are reaching 91% of students on
+                    average. Urgent announcements have the highest view rate.
+                </p>
+            </div>
+
+            <button>
+                View Analytics →
+            </button>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

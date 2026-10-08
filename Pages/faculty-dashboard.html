@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faculty Dashboard | UniVia</title>
+
+    <link rel="stylesheet" href="../css/faculty-dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-mark">U</span>
+                <span>Uni<span>Via</span></span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <p class="nav-title">MAIN</p>
+
+                <a href="faculty-dashboard.html" class="nav-item active">
+                    <span>⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="classes.html" class="nav-item">
+                    <span>▦</span>
+                    My Classes
+                </a>
+
+                <a href="faculty-attendance.html" class="nav-item">
+                    <span>✓</span>
+                    Attendance
+                </a>
+
+                <a href="faculty-performance.html" class="nav-item">
+                    <span>◔</span>
+                    Performance
+                </a>
+
+                <a href="assignments.html" class="nav-item">
+                    <span>□</span>
+                    Assignments
+                </a>
+
+                <a href="announcements.html" class="nav-item">
+                    <span>◉</span>
+                    Announcements
+                </a>
+
+                <p class="nav-title">CAMPUS</p>
+
+                <a href="campus.html" class="nav-item">
+                    <span>⌂</span>
+                    Campus
+                </a>
+
+                <a href="complaints.html" class="nav-item">
+                    <span>!</span>
+                    Complaints
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <a href="profile.html" class="nav-item">
+                    <span>○</span>
+                    Profile
+                </a>
+
+                <a href="../index.html" class="nav-item logout">
+                    <span>↪</span>
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+
+                <div>
+                    <p class="breadcrumb">FACULTY / DASHBOARD</p>
+                    <h1>Faculty Dashboard</h1>
+                </div>
+
+                <div class="topbar-right">
+
+                    <button class="notification-btn">
+                        🔔
+                        <span></span>
+                    </button>
+
+                    <div class="profile-mini">
+
+                        <div class="avatar">
+                            F
+                        </div>
+
+                        <div>
+                            <strong>Faculty Name</strong>
+                            <small>Faculty</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- PAGE CONTENT -->
+            <section class="content">
+
+                <!-- WELCOME -->
+                <div class="welcome-section">
+
+                    <div>
+                        <p class="welcome-label">GOOD MORNING</p>
+
+                        <h2>
+                            Welcome back,
+                            <span>Faculty Name</span> 
+                        </h2>
+
+                        <p class="welcome-text">
+                            Here's what's happening with your classes today.
+                        </p>
+                    </div>
+
+                    <button class="primary-btn">
+                        + Mark Attendance
+                    </button>
+
+                </div>
+
+
+                <!-- OVERVIEW CARDS -->
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+                            ▦
+                        </div>
+
+                        <div>
+                            <p>My Classes</p>
+                            <h3>4</h3>
+                            <span>Active classes</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                        <div>
+                            <p>Students</p>
+                            <h3>186</h3>
+                            <span>Across all classes</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+                            ◷
+                        </div>
+
+                        <div>
+                            <p>Today's Classes</p>
+                            <h3>3</h3>
+                            <span>2 remaining</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            !
+                        </div>
+
+                        <div>
+                            <p>Pending Tasks</p>
+                            <h3>7</h3>
+                            <span>Needs attention</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN GRID -->
+                <div class="dashboard-grid">
+
+
+                    <!-- TODAY'S SCHEDULE -->
+                    <section class="panel schedule-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Today's Schedule</h3>
+                                <p>Your classes for today</p>
+                            </div>
+
+                            <a href="classes.html">View timetable →</a>
+
+                        </div>
+
+
+                        <div class="schedule-list">
+
+                            <div class="schedule-item current">
+
+                                <div class="time">
+                                    <strong>09:00</strong>
+                                    <span>10:00 AM</span>
+                                </div>
+
+                                <div class="schedule-line"></div>
+
+                                <div class="class-info">
+                                    <h4>Programming in C</h4>
+                                    <p>CSE • Section B1</p>
+                                    <span class="room">Room 204</span>
+                                </div>
+
+                                <span class="status current-status">
+                                    Now
+                                </span>
+
+                            </div>
+
+
+                            <div class="schedule-item">
+
+                                <div class="time">
+                                    <strong>11:00</strong>
+                                    <span>12:00 PM</span>
+                                </div>
+
+                                <div class="schedule-line"></div>
+
+                                <div class="class-info">
+                                    <h4>Programming in C</h4>
+                                    <p>CSE • Section B2</p>
+                                    <span class="room">Lab 3</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="schedule-item">
+
+                                <div class="time">
+                                    <strong>02:00</strong>
+                                    <span>03:00 PM</span>
+                                </div>
+
+                                <div class="schedule-line"></div>
+
+                                <div class="class-info">
+                                    <h4>Data Structures</h4>
+                                    <p>CSE • Section A1</p>
+                                    <span class="room">Room 301</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- MY CLASSES -->
+                    <section class="panel classes-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>My Classes</h3>
+                                <p>Current teaching assignments</p>
+                            </div>
+
+                            <a href="classes.html">View all →</a>
+
+                        </div>
+
+
+                        <div class="class-list">
+
+                            <div class="class-card">
+
+                                <div class="subject-icon blue">
+                                    C
+                                </div>
+
+                                <div class="class-details">
+                                    <h4>Programming in C</h4>
+                                    <p>CSE • B1</p>
+                                </div>
+
+                                <div class="class-students">
+                                    <strong>62</strong>
+                                    <span>Students</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="class-card">
+
+                                <div class="subject-icon cyan">
+                                    DS
+                                </div>
+
+                                <div class="class-details">
+                                    <h4>Data Structures</h4>
+                                    <p>CSE • A1</p>
+                                </div>
+
+                                <div class="class-students">
+                                    <strong>58</strong>
+                                    <span>Students</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="class-card">
+
+                                <div class="subject-icon purple">
+                                    AI
+                                </div>
+
+                                <div class="class-details">
+                                    <h4>Artificial Intelligence</h4>
+                                    <p>CSE • B2</p>
+                                </div>
+
+                                <div class="class-students">
+                                    <strong>66</strong>
+                                    <span>Students</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- ATTENDANCE -->
+                    <section class="panel attendance-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Attendance Overview</h3>
+                                <p>Class attendance summary</p>
+                            </div>
+
+                            <a href="faculty-attendance.html">
+                                Manage →
+                            </a>
+
+                        </div>
+
+
+                        <div class="attendance-list">
+
+                            <div class="attendance-row">
+
+                                <div>
+                                    <strong>Programming in C</strong>
+                                    <span>B1 • 62 students</span>
+                                </div>
+
+                                <div class="attendance-value good">
+                                    87%
+                                </div>
+
+                            </div>
+
+
+                            <div class="progress">
+                                <span style="width:87%"></span>
+                            </div>
+
+
+                            <div class="attendance-row">
+
+                                <div>
+                                    <strong>Data Structures</strong>
+                                    <span>A1 • 58 students</span>
+                                </div>
+
+                                <div class="attendance-value average">
+                                    78%
+                                </div>
+
+                            </div>
+
+
+                            <div class="progress">
+                                <span style="width:78%"></span>
+                            </div>
+
+
+                            <div class="attendance-row">
+
+                                <div>
+                                    <strong>Artificial Intelligence</strong>
+                                    <span>B2 • 66 students</span>
+                                </div>
+
+                                <div class="attendance-value good">
+                                    91%
+                                </div>
+
+                            </div>
+
+
+                            <div class="progress">
+                                <span style="width:91%"></span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PERFORMANCE -->
+                    <section class="panel performance-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Student Performance</h3>
+                                <p>Recent academic performance</p>
+                            </div>
+
+                            <a href="faculty-performance.html">
+                                Analytics →
+                            </a>
+
+                        </div>
+
+
+                        <div class="performance-summary">
+
+                            <div class="performance-main">
+                                <span>Average Score</span>
+                                <strong>76.4%</strong>
+                                <small>Across your classes</small>
+                            </div>
+
+                            <div class="performance-change">
+                                ↑ 4.8%
+                                <span>vs previous tests</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-bars">
+
+                            <div class="bar-item">
+
+                                <div>
+                                    <span>Programming in C</span>
+                                    <strong>81%</strong>
+                                </div>
+
+                                <div class="bar">
+                                    <span style="width:81%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="bar-item">
+
+                                <div>
+                                    <span>Data Structures</span>
+                                    <strong>72%</strong>
+                                </div>
+
+                                <div class="bar">
+                                    <span style="width:72%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="bar-item">
+
+                                <div>
+                                    <span>Artificial Intelligence</span>
+                                    <strong>76%</strong>
+                                </div>
+
+                                <div class="bar">
+                                    <span style="width:76%"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- BOTTOM SECTION -->
+                <div class="bottom-grid">
+
+
+                    <!-- PENDING TASKS -->
+                    <section class="panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Pending Tasks</h3>
+                                <p>Things that need your attention</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="task-list">
+
+                            <div class="task-item">
+
+                                <div class="task-icon orange">
+                                    !
+                                </div>
+
+                                <div>
+                                    <strong>Enter Test 2 marks</strong>
+                                    <span>Programming in C • B1</span>
+                                </div>
+
+                                <span class="task-date">Due today</span>
+
+                            </div>
+
+
+                            <div class="task-item">
+
+                                <div class="task-icon blue">
+                                    □
+                                </div>
+
+                                <div>
+                                    <strong>Review assignment submissions</strong>
+                                    <span>Data Structures • A1</span>
+                                </div>
+
+                                <span class="task-date">2 days</span>
+
+                            </div>
+
+
+                            <div class="task-item">
+
+                                <div class="task-icon purple">
+                                    ◉
+                                </div>
+
+                                <div>
+                                    <strong>Post class announcement</strong>
+                                    <span>Artificial Intelligence • B2</span>
+                                </div>
+
+                                <span class="task-date">3 days</span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- QUICK ACTIONS -->
+                    <section class="panel quick-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <h3>Quick Actions</h3>
+                                <p>Common faculty actions</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+                            <a href="faculty-attendance.html" class="quick-action">
+                                <span class="quick-icon blue">✓</span>
+                                <div>
+                                    <strong>Mark Attendance</strong>
+                                    <small>Record today's attendance</small>
+                                </div>
+                            </a>
+
+
+                            <a href="assignments.html" class="quick-action">
+                                <span class="quick-icon purple">□</span>
+                                <div>
+                                    <strong>Create Assignment</strong>
+                                    <small>Add a new assignment</small>
+                                </div>
+                            </a>
+
+
+                            <a href="announcements.html" class="quick-action">
+                                <span class="quick-icon cyan">◉</span>
+                                <div>
+                                    <strong>Post Announcement</strong>
+                                    <small>Notify your students</small>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

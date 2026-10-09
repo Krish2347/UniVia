@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Review | UniVia</title>
+    <link rel="stylesheet" href="../css/faculty-complaints.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">U</div>
+            <span>UniVia</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="nav-label">MAIN</p>
+            <a href="faculty-dashboard.html"><span>⌂</span>Dashboard</a>
+            <a href="classes.html"><span>▦</span>My Classes</a>
+            <a href="faculty-attendance.html"><span>✓</span>Attendance</a>
+            <a href="faculty-performance.html"><span>◈</span>Performance</a>
+            <a href="assignments.html"><span>▤</span>Assignments</a>
+            <a href="announcements.html"><span>◉</span>Announcements</a>
+            <a href="faculty-complaints.html" class="active"><span>⚑</span>Complaints</a>
+
+            <p class="nav-label">ACCOUNT</p>
+            <a href="#"><span>◯</span>Profile</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="auth.html"><span>↪</span>Logout</a>
+        </div>
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="breadcrumb">FACULTY / CAMPUS SERVICES</div>
+
+            <div class="topbar-right">
+                <button class="notification-btn" aria-label="Notifications">
+                    ♢ <span></span>
+                </button>
+
+                <div class="user-info">
+                    <div class="avatar">F</div>
+                    <div>
+                        <strong>Faculty Name</strong>
+                        <small>Faculty Account</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="page-header">
+            <div>
+                <span class="eyebrow">CAMPUS SERVICES</span>
+                <h1>Complaint Review</h1>
+                <p>Review student concerns, track reported issues, and monitor resolution progress.</p>
+            </div>
+            <button class="outline-btn">↓ Export Report</button>
+        </section>
+
+
+        <!-- SUMMARY CARDS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">▤</div>
+                <div>
+                    <span>Total Complaints</span>
+                    <strong>36</strong>
+                    <small>Across campus services</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">◷</div>
+                <div>
+                    <span>Pending Review</span>
+                    <strong>08</strong>
+                    <small>Require attention</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">⚑</div>
+                <div>
+                    <span>In Progress</span>
+                    <strong>12</strong>
+                    <small>Currently being handled</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div>
+                    <span>Resolved</span>
+                    <strong>16</strong>
+                    <small>Marked as completed</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FILTERS -->
+        <section class="filter-panel">
+            <div class="filter-heading">
+                <div>
+                    <h2>Reported Issues</h2>
+                    <p>Review and manage submitted campus complaints.</p>
+                </div>
+                <span class="result-count">36 records</span>
+            </div>
+
+            <div class="filters">
+                <input type="search" placeholder="Search complaint ID, title or student...">
+
+                <select aria-label="Filter by category">
+                    <option>All Categories</option>
+                    <option>Classroom</option>
+                    <option>Laboratory</option>
+                    <option>Wi-Fi & Internet</option>
+                    <option>Electricity</option>
+                    <option>Sanitation</option>
+                    <option>Other</option>
+                </select>
+
+                <select aria-label="Filter by status">
+                    <option>All Statuses</option>
+                    <option>Pending</option>
+                    <option>In Progress</option>
+                    <option>Resolved</option>
+                    <option>Rejected</option>
+                </select>
+
+                <select aria-label="Filter by priority">
+                    <option>All Priorities</option>
+                    <option>Urgent</option>
+                    <option>High</option>
+                    <option>Normal</option>
+                    <option>Low</option>
+                </select>
+            </div>
+        </section>
+
+
+        <!-- COMPLAINT TABLE -->
+        <section class="table-panel">
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>COMPLAINT</th>
+                            <th>SUBMITTED BY</th>
+                            <th>CATEGORY</th>
+                            <th>DATE</th>
+                            <th>PRIORITY</th>
+                            <th>STATUS</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Wi-Fi connection unavailable</strong>
+                                <small class="complaint-id">CMP-2026-036</small>
+                            </td>
+                            <td>
+                                <strong>Rahul Sharma</strong>
+                                <small>CSE • B1</small>
+                            </td>
+                            <td>Wi-Fi & Internet</td>
+                            <td>Oct 09, 2026</td>
+                            <td><span class="priority urgent">Urgent</span></td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><button class="review-btn">Review →</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Projector not working</strong>
+                                <small class="complaint-id">CMP-2026-035</small>
+                            </td>
+                            <td>
+                                <strong>Priya Verma</strong>
+                                <small>CSE • B2</small>
+                            </td>
+                            <td>Classroom</td>
+                            <td>Oct 08, 2026</td>
+                            <td><span class="priority high">High</span></td>
+                            <td><span class="status progress">In Progress</span></td>
+                            <td><button class="review-btn">Review →</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Lab computer not starting</strong>
+                                <small class="complaint-id">CMP-2026-034</small>
+                            </td>
+                            <td>
+                                <strong>Aman Gupta</strong>
+                                <small>CSE • A1</small>
+                            </td>
+                            <td>Laboratory</td>
+                            <td>Oct 08, 2026</td>
+                            <td><span class="priority normal">Normal</span></td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><button class="review-btn">Review →</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Lights not working in Room 204</strong>
+                                <small class="complaint-id">CMP-2026-033</small>
+                            </td>
+                            <td>
+                                <strong>Neha Singh</strong>
+                                <small>CSE • B1</small>
+                            </td>
+                            <td>Electricity</td>
+                            <td>Oct 07, 2026</td>
+                            <td><span class="priority high">High</span></td>
+                            <td><span class="status progress">In Progress</span></td>
+                            <td><button class="review-btn">Review →</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Classroom cleanliness issue</strong>
+                                <small class="complaint-id">CMP-2026-032</small>
+                            </td>
+                            <td>
+                                <strong>Vikas Yadav</strong>
+                                <small>CSE • A2</small>
+                            </td>
+                            <td>Sanitation</td>
+                            <td>Oct 06, 2026</td>
+                            <td><span class="priority low">Low</span></td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td><button class="review-btn">Review →</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Damaged classroom desk</strong>
+                                <small class="complaint-id">CMP-2026-031</small>
+                            </td>
+                            <td>
+                                <strong>Aditya Kumar</strong>
+                                <small>CSE • B1</small>
+                            </td>
+                            <td>Infrastructure</td>
+                            <td>Oct 05, 2026</td>
+                            <td><span class="priority normal">Normal</span></td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td><button class="review-btn">Review →</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <span>Showing 1–6 of 36 complaints</span>
+                <div class="pagination">
+                    <button disabled>←</button>
+                    <button class="current">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>...</button>
+                    <button>6</button>
+                    <button>→</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM PANELS -->
+        <section class="bottom-grid">
+
+            <div class="info-panel">
+                <div class="panel-heading">
+                    <h2>Recent Activity</h2>
+                    <span>Latest updates</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-dot orange-dot"></div>
+                    <div>
+                        <strong>New complaint submitted</strong>
+                        <p>CMP-2026-036 · Wi-Fi connection unavailable</p>
+                        <small>Today, 9:10 AM</small>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-dot blue-dot"></div>
+                    <div>
+                        <strong>Complaint moved to In Progress</strong>
+                        <p>CMP-2026-035 · Projector not working</p>
+                        <small>Yesterday, 3:45 PM</small>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-dot green-dot"></div>
+                    <div>
+                        <strong>Complaint marked as resolved</strong>
+                        <p>CMP-2026-032 · Classroom cleanliness issue</p>
+                        <small>Oct 06, 2026</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="info-panel">
+                <div class="panel-heading">
+                    <h2>Review Guidelines</h2>
+                </div>
+
+                <div class="guideline">
+                    <span>01</span>
+                    <div>
+                        <strong>Verify the complaint</strong>
+                        <p>Check the description, location, and reported issue.</p>
+                    </div>
+                </div>
+
+                <div class="guideline">
+                    <span>02</span>
+                    <div>
+                        <strong>Assign appropriate priority</strong>
+                        <p>Escalate urgent safety or infrastructure concerns.</p>
+                    </div>
+                </div>
+
+                <div class="guideline">
+                    <span>03</span>
+                    <div>
+                        <strong>Track until resolution</strong>
+                        <p>Route the issue to the responsible campus team.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <span>© 2026 UniVia · Faculty Portal</span>
+            <span>Campus services management</span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
